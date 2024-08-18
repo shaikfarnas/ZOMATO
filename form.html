@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+body{
+
+
+       background-image:url("form.jpeg");
+ }
+
+
+
+
+</style>
+    </head>
+    <body>
+     <br><br><br><br><br><Br>
+     <div align="center">
+     <form method="post" action="connect.php">
+        <div align="center" class="form-group" >
+            <div class="input-group  mb-3">
+                
+                 <span class="input-group-text bg-success text-light"><b>NAME:</b></span>
+                 <input type="text" class="form-control" placeholder="Username" name="name" required >
+                <small></small>
+            </div>
+            <div class="input-group mb-3 ">
+                <span class="input-group-text bg-success text-light" ><b>EMAIL:</b></span>
+                <input type="email" class="form-control" placeholder="Enter email" name="email" required>
+          	<small></small>
+            </div>
+            <div class="input-group mb-3 ">
+                <span class="input-group-text bg-success text-light" ><b>PHONE NUMBER:</b></span>
+            	<input type="text" class="form-control" placeholder="Enter number" name="phone" required>
+          	<small></small>
+            </div>
+           <div class="input-group mb-3 ">
+                <span class="input-group-text bg-success text-light" ><b>AREA,STREET,SECTOR,VILLAGE:</b></span>
+        	<input type="text" class="form-control" placeholder="Enter address" name="address" required>
+        	<small></small>
+	   </div>
+	   <div class="input-group mb-3 ">
+    		<span class="input-group-text bg-success text-light" ><b>LANDMARK:</b></span>
+    		<input type="text" class="form-control" placeholder="Enter landmark" name="landmark" >
+    		<small></small>
+	   </div>
+	   <div class="input-group mb-3 " >
+    		<span class="input-group-text  bg-success text-light" ><b>PINCODE:</b></span>
+    		<input type="text" class="form-control" placeholder="Enter pincode" name="pincode" required >
+    		<small></small>
+	   </div>
+	   <div class="input-group mb-3 " >
+    	   	<span class="input-group-text bg-success text-light" ><b>PAYMENT TYPE:</b></span>
+    		<select class="form-select"  name="payment" required>
+        		<option value="choose" class="text-dark">CHOOSE PAYMENT TYPE</option>
+			<option value="CASH" class="text-dark">CASH</option>
+        		<option Value="PHONEPAY" class="text-dark">PHONEPAY</option>
+        		<option value="GPAY" class="text-dark">GPAY</option>
+        		<option value="PAYTM" class="text-dark">PAYTM</option>
+		</select>
+  		<small></small>
+	   </div>
+	</div>
+       <br>
+       <button type="submit" name="submit" class="btn btn-danger form-control-md">Submit</button>
+</form>
+</div>
+ 
+</body>
+</html>
+
+
+      

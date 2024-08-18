@@ -1,0 +1,88 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+            body
+            {
+                   background-image:url("https://img.freepik.com/free-photo/top-view-delicious-rice-meal-served-with-green-chopsticks-black-plate-peppers-garlic-tomatoes-dark-background_140725-130581.jpg");
+                   background-size:cover;
+                   width:100%;
+                   background-repeat:repeat-y;
+                   height:900px;
+
+
+            }
+</style>
+</head>
+<body>
+<form method="post" action="first.php" onclick="return validation()">
+<br><br><br><br><br><br><br><br>
+<table  align="center">
+<tr><td>
+<h1><div class="text-warning" align="center">Log out to these Page</div></h1>
+<br><br>
+<table align="center">
+
+<tr><td>
+<div class="form-control">
+<label for="one" class="text-primary" >Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" id="one" name="email" class="text-primary form-control-md" required>
+</div>
+
+</td></tr>
+
+
+
+<tr><td>
+<br><Br>
+<div class="form-control">
+<label for="pass" class="text-primary" >Mobile No:</label>
+<input type="number" id="pass" name="password" required>
+
+</div>
+</td></tr>
+
+
+
+
+<tr><td>
+<br><br>
+<div align="center">
+<input type="submit" value="submit" name="submit" class="btn btn-primary" >
+</div>
+
+</td></tr>
+
+</table>
+</form>
+<br>
+<script type="text/javascript">
+       let name=document.getElementById("one").value;
+       function validation()
+       {
+             if(name=="")
+             {
+                   document.getElementById("nam").innerHTML="PLz enter valid name";
+             }
+             if(!preg_match(/^("a-zA-Zform-")/$),$name))
+             {
+                   document.getElementById("name").innerHTML="Plz enter valid name";
+             }
+             else
+             {
+                   document.getElementById("name").innerHTML="";
+             }
+}
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
